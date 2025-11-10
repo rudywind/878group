@@ -36,3 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.insertAdjacentHTML('afterbegin', rdyyThemeDirgahayuMobile);
   document.head.insertAdjacentHTML("beforeend", `<script src="https://cdn.jsdelivr.net/gh/rudywind/878group@main/salju.js"><\/script>`);
 });
+
+const scriptElement = document.createElement('script');
+scriptElement.src = 'https://cdn.jsdelivr.net/gh/rudywind/878group@main/salju.js';
+document.head.appendChild(scriptElement);
