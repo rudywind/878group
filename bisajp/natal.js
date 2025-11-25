@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .main-content, 
       .content, 
       .no-bottom{
-        background: url(hhttps://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRenRQFobyg0b_oUmATZMkGa15J1e3lxWhpwgtTef_0dbfclt3RImaSMFv7C80dyGlIdAdroAQP2sG6oKuAx6WvDjrQbFNhxwIlnyu3TSRu8NMbQHpJNMUmnHx9QEl25gEKb313zClTD75AJJgrBstKho31GmavBew0BjvQh37KGRT28sQC0WnfBXQPg/s1600/Picsart_25-11-08_20-16-02-182.png) !important;
+        background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRenRQFobyg0b_oUmATZMkGa15J1e3lxWhpwgtTef_0dbfclt3RImaSMFv7C80dyGlIdAdroAQP2sG6oKuAx6WvDjrQbFNhxwIlnyu3TSRu8NMbQHpJNMUmnHx9QEl25gEKb313zClTD75AJJgrBstKho31GmavBew0BjvQh37KGRT28sQC0WnfBXQPg/s1600/Picsart_25-11-08_20-16-02-182.png) !important;
         background-size: 100% !important;
       }
       
