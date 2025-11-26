@@ -33,5 +33,5 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.insertAdjacentHTML('afterbegin', rdyyThemeDirgahayuMobile);
 });
 const scriptElement = document.createElement('script');
-scriptElement.src = 'https://cdn.jsdelivr.net/gh/rudywind/878group@main/salju.js';
+scriptElement.src = 'https://cdn.jsdelivr.net/gh/rudywind/878group@main/salju_v2.js';
 document.head.appendChild(scriptElement);
