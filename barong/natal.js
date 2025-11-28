@@ -37,11 +37,7 @@ body{
 </style>
 `);
 
-// === Load salju.js===
-const scriptElementSalju = document.createElement('script');
-scriptElementSalju.src = 'https://cdn.jsdelivr.net/gh/rudywind/878group@main/salju.js';
-document.head.appendChild(scriptElementSalju);
-
+ 
 // === Tambah efek awan, gif, dll ===
 document.body.insertAdjacentHTML("beforeend", `
 <style>
