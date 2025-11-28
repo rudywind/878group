@@ -39,6 +39,3 @@ document.addEventListener("DOMContentLoaded", function () {
     </style>`;
   document.body.insertAdjacentHTML('afterbegin', rdyyThemeDefault);
 });
-const scriptElement = document.createElement('script');
-scriptElement.src = 'https://cdn.jsdelivr.net/gh/rudywind/878group@main/salju.js';
-document.head.appendChild(scriptElement);
