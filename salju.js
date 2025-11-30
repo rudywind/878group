@@ -1,4 +1,4 @@
-<script>
+
 var snowStorm = null;
 
 function SnowStorm() {
@@ -479,6 +479,6 @@ function SnowStorm() {
 
 snowStorm = new SnowStorm();
 
-</script>
+
 
 
