@@ -1,14 +1,15 @@
+<script>
 var snowStorm = null;
 
 function SnowStorm() {
-  this.flakesMax = 300;           // Limit total amount of snow made (falling + sticking)
+  this.flakesMax = 50;           // Limit total amount of snow made (falling + sticking)
   this.flakesMaxActive = 340;      // Limit amount of snow falling at once (less = lower CPU use)
-  this.animationInterval = 33;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
+  this.animationInterval = 53;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
   this.flakeBottom = null;        // Integer for Y axis snow limit, 0 or null for "full-screen" snow effect
   this.targetElement = null;      // element which snow will be appended to (document body if null/undefined) - can be an element ID string, or a DOM node reference
   this.followMouse = false;        // Snow will change movement with the user's mouse
-  this.snowColor = 'rgb(156 184 231)';        // Don't eat (or use?) yellow snow.
-  this.snowCharacter = '&#10052;';  // &bull; = bullet, &middot; is square on some systems etc.
+  this.snowColor = 'rgb(240, 248, 255)';        // Don't eat (or use?) yellow snow.
+  this.snowCharacter = "&#10052;";  // &bull; = bullet, &middot; is square on some systems etc.
   this.snowStick = true;          // Whether or not snow should "stick" at the bottom. When off, will never collect.
   this.useMeltEffect = true;      // When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it
   this.useTwinkleEffect = false;  // Allow snow to randomly "flicker" in and out of view while falling
@@ -18,8 +19,8 @@ function SnowStorm() {
 
   this.flakeLeftOffset = 0;       // amount to subtract from edges of container
   this.flakeRightOffset = 0;      // amount to subtract from edges of container
-  this.flakeWidth = 8;            // max pixel width for snow element
-  this.flakeHeight = 8;           // max pixel height for snow element
+  this.flakeWidth = 37;            // max pixel width for snow element
+  this.flakeHeight = 20;           // max pixel height for snow element
   this.vMaxX = 5;                 // Maximum X velocity range for snow
   this.vMaxY = 4;                 // Maximum Y velocity range
   this.zIndex = 9999;                // CSS stacking order applied to each snowflake
@@ -214,7 +215,7 @@ function SnowStorm() {
     this.meltFrame = 0;
     this.twinkleFrame = 0;
     this.active = 1;
-    this.fontSize = (10+(this.type/5)*10);
+    this.fontSize = (20+(this.type/5)*10);
     this.o = document.createElement('div');
     this.o.innerHTML = storm.snowCharacter;
     this.o.style.color = storm.snowColor;
@@ -477,3 +478,7 @@ function SnowStorm() {
 }
 
 snowStorm = new SnowStorm();
+
+</script>
+
+
